@@ -1,0 +1,177 @@
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+.attribution  {
+    position: relative;
+}
+
+
+body  {
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container  {
+    display: grid;
+    grid-template-rows: 1fr  1fr  1fr;
+    border-radius: 12px;
+    margin: 50px  auto;
+}
+
+/* upper-content */
+
+.content-up  {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px  12px  0  0;
+    margin-top: 20px  20px  20px  0;
+    width: 350px;
+    margin: 0  20px;
+}
+
+.heading-up-1  {
+    color: hsl(179, 62%, 43%);
+    position: relative;
+    left: -5px;
+}
+
+.heading-up-2  {
+    color: hsl(71, 73%, 54%);
+    position: relative;
+    left: -5px;
+    margin-top: 10px;
+    white-space: pre;
+}
+
+.para-up  {
+    color: hsl(218, 22%, 67%);
+    position: relative;
+    margin-top: 15px;
+    left: -35px;
+    line-height: 1.8;
+}
+
+.para-up  {
+    white-space: pre;
+}
+
+/* price-section */
+
+.price  {
+    background-color: hsl(179, 62%, 43%);
+    padding: 30px;
+    border-radius: 0  0  0  12px;
+    width: 350px;
+    margin: 0  20px;
+}
+
+.subscription  {
+    color: hsl(204, 43%, 93%);
+}
+
+.mrp  {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+span  {
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    opacity: 70%;
+    position: relative;
+    top: -7px;
+    left: 15px;
+}
+
+.benefit  {
+    color: hsl(204, 43%, 93%);
+    margin-top: 5px;
+}
+
+.sign-up  {
+    text-decoration: none;
+    color: #fff;
+    background-color: hsl(71, 73%, 54%);
+    position: relative;
+    top: 80px;
+    left: 5px;
+    border-radius: 10px;
+    padding: 20px  130px;
+}
+
+ /* reason-section */
+
+ .reason  {
+     background-color: hsl(179, 62%, 60%);
+     padding: 30px;
+     border-radius: 0  0  12px  0;
+     width: 350px;
+     margin: 0  20px;
+ }
+
+ .points  {
+     list-style: none;
+     color: hsl(204, 43%, 93%);
+     opacity: 80%;
+     position: relative;
+     left: 5px;
+     top: 20px;
+     line-height: 1.6;
+ }
+
+ @media screen and (min-width: 450px)  {
+     .container  {
+         display: grid;
+         grid-template-columns: 50%  50%;
+         grid-template-areas: "a a""b c";
+         max-width: 650px;
+     }
+
+     .content-up {
+         grid-area: a;
+         width: 675px;
+     }
+
+     .price  {
+         grid-area: b;
+         width: 350px;
+
+     }
+
+     .reason  {
+         grid-area: c;
+         width: 350px;
+     }
+
+     .heading-up-2  {
+         white-space: initial;
+     }
+
+     .para-up  {
+         white-space: initial;
+         width: 579px;
+         position: relative;
+         left: -5px;
+     }
+
+     .sign-up  {
+         padding: 20px  80px;
+     }
+ }
+
+ 
+
+ 
+
+
+ 
+
+ 
